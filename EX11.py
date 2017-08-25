@@ -10,5 +10,5 @@ print "How much do you weigh ?"
 
 weight = raw_input()
 
-print "So, you're %d years old, %f tall and %f heavy" %(
+print "So, you're %s years old, %s tall and %s heavy" %(
 	   age, height, weight)
