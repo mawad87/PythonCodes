@@ -1,14 +1,14 @@
 print "How old are you ?"
 
-age = raw_input()
+age = int(raw_input())
 
 print "How tall are you ?"
 
-height = raw_input()
+height = float(raw_input())
 
 print "How much do you weigh ?"
 
-weight = raw_input()
+weight = float(raw_input())
 
-print "So, you're %s years old, %s tall and %s heavy" %(
+print "So, you're %d years old, %f tall and %f heavy" %(
 	   age, height, weight)
