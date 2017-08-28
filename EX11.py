@@ -8,6 +8,8 @@ age = int(raw_input())
 
 print "How tall are you ?"
 
+## so with the below I used float() function to convert the input into numbers
+
 height = float(raw_input())
 
 print "How much do you weigh ?"
