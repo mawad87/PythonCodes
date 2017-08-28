@@ -4,7 +4,7 @@ print "Its fleece was white as %s." % 'snow'
 
 print "And everywhere that Mary went."
 
-print "." * 10 # what'd that do?
+print "." * 10 # repeat . for 10 times
 
 end1 = "C"
 
