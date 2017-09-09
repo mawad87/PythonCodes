@@ -8,6 +8,8 @@ def break_words(stuff):
  return words
  
 def sort_words(words):
+ # sort is based on Capital alphabet the lower alphabet
+ # so it's better to make all first letters upper or lower case
  """Sorts the words."""
  return sorted(words)
 
