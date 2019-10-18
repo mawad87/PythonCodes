@@ -3,13 +3,13 @@ import getpass
 import time
 
 HOST = "172.168.10.111"
-USR = 'cisco'
-PASS = 'cisco'
+USER = "cisco"
+PASS = "cisco"
 
 ssh_client = paramiko.SSHClient()
 
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh_client.connect(hostname=HOST,username=USR,password=PASS)
+ssh_client.connect(hostname=HOST,username=USER,password=PASS)
 
 ssh_connecion = ssh_client.invoke_shell()
 
