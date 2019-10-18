@@ -21,7 +21,7 @@ print (output)
 
 ssh_connecion.send("show ip int brief\n")
 time.sleep(.5)
-output = ssh_connecion.recv(65535)
+output = ssh_connecion.recv(65535).decode(encoding="utf-8")
 print (output)
 
 ssh_connecion.close
