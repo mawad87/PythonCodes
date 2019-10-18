@@ -5,12 +5,11 @@ import time
 HOST = "172.168.10.111"
 USER = "cisco"
 PASS = "cisco"
-proxy = None
 
 ssh_client = paramiko.SSHClient()
 ssh_client.load_system_host_keys()
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh_client.connect(HOST,username=USER,password=PASS,sock=proxy)
+ssh_client.connect(HOST,username=USER,password=PASS,look_for_keys=False)
 
 ssh_connecion = ssh_client.invoke_shell()
 
