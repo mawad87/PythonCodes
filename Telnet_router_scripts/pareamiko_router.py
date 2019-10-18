@@ -15,7 +15,7 @@ ssh_connecion = ssh_client.invoke_shell()
 
 ssh_connecion.send("show ip route\n")
 
-output = ssh_connecion.recv(11111).decode(encodings="utf-8")
+output = ssh_connecion.recv(11111).decode(encoding="utf-8")
 
 print(output)
 
