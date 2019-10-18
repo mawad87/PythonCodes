@@ -17,11 +17,11 @@ ssh_connecion.send("show ip route\n")
 
 output = ssh_connecion.recv(65535).decode(encoding="utf-8")
 
-print output
+print (output)
 
 ssh_client.send("show ip int brief\n")
 time.sleep(.5)
 output = ssh_client.recv(65535)
-print output
+print (output)
 
 ssh_connecion.close
