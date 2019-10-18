@@ -3,8 +3,8 @@ import getpass
 import time
 
 HOST = "172.168.10.111"
-USR = input("Enter your Username: ")
-PASS = getpass.getpass()
+USR = cisco
+PASS = cisco
 
 ssh_client = paramiko.SSHClient()
 
