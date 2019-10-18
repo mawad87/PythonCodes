@@ -4,7 +4,7 @@ import time
 
 HOST = "172.168.10.111"
 username = input("Please enter your username: ")
-password = getpass()
+password = getpass.getpass()
 
 ssh_client = paramiko.SSHClient()
 ssh_client.load_system_host_keys()
